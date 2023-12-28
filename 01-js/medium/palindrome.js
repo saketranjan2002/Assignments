@@ -4,7 +4,18 @@
 */
 
 function isPalindrome(str) {
+  let len = str.length-1;
+
+  for(let i=0;i<len;i++){
+    if(str[i]!=str[len-i]){
+      return false;
+    }
+  }
+
   return true;
 }
+
+console.log(isPalindrome("malayalam"));
+
 
 module.exports = isPalindrome;
