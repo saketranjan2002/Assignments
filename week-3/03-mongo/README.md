@@ -1,7 +1,17 @@
 ## Create a course selling website
 
+
+<!-- 
+MongoDB
+Username : saketranjan2002
+Password : GgiA6h4msBWRNLkQ 
+-->
+
+
+
 ### Description
 You need to implement a course selling app. Make sure you setup your own mongodb instance before starting. 
+<!-- mongodb+srv://saketranjan2002:GgiA6h4msBWRNLkQ@cluster0.gcnrlvh.mongodb.net/ -->
 It needs to support two types of users - 
 1. Admins
 2. Users
