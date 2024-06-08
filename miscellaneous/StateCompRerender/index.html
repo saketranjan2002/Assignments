@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div id="buttonParent"></div>
+    
+    <script>
+        let state = {
+            count:0
+        }
+
+
+        const onPress = () => {
+            state.count++;
+            buttonCompoReRender();
+        }
+
+        const buttonCompoReRender = () => {
+            const parent = document.getElementById("buttonParent");
+            parent.innerHTML="";       // first clear the buttonParent 
+            const buttonCompo = createButtonComponent();
+            parent.appendChild(buttonCompo);
+
+        }
+
+        const createButtonComponent = () => {
+            const button = document.createElement('button');
+            button.setAttribute("onclick",`onPress()`);
+            button.innerHTML = `Counter ${state.count}`;
+            return button;
+        }
+
+        buttonCompoReRender();
+        
+
+    </script>    
+</body>
+</html>
